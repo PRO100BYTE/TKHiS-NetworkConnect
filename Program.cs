@@ -42,9 +42,9 @@ class Program
     static void ConnectToNetwork(string network)
     {
         var adapters = NetworkInterface.GetAllNetworkInterfaces();
+        Console.WriteLine("Выберите сетевой адаптер, которому необходимо сменить IP:");
         for (int i = 0; i < adapters.Length; i++)
         {
-            Console.WriteLine("Выберите сетевой адаптер, которому необходимо сменить IP:");
             Console.WriteLine($"{i + 1}. {adapters[i].Name}");
         }
 
