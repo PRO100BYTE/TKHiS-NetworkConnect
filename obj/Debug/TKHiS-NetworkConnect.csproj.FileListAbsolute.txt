@@ -5,3 +5,10 @@ C:\Users\TheDayG0ne\Desktop\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.
 C:\Users\TheDayG0ne\Desktop\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.csproj.CoreCompileInputs.cache
 C:\Users\TheDayG0ne\Desktop\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.exe
 C:\Users\TheDayG0ne\Desktop\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.pdb
+C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\bin\Debug\TKHiS-NetworkConnect.exe.config
+C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\bin\Debug\TKHiS-NetworkConnect.exe
+C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\bin\Debug\TKHiS-NetworkConnect.pdb
+C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.csproj.AssemblyReference.cache
+C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.csproj.CoreCompileInputs.cache
+C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.exe
+C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.pdb

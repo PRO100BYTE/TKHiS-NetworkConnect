@@ -1,20 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\TheDayG0ne\\Desktop\\TKHiS-NetworkConnect\\",
+  "WorkspaceRootPath": "C:\\Users\\TheDayG0ne\\Documents\\GitHub\\TheDayG0ne\\TKHiS-NetworkConnect\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC4EFC79-D22E-4E3B-AE6F-570E422A6202}|TKHiS-NetworkConnect.csproj|c:\\users\\thedayg0ne\\desktop\\tkhis-networkconnect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AC4EFC79-D22E-4E3B-AE6F-570E422A6202}|TKHiS-NetworkConnect.csproj|c:\\users\\thedayg0ne\\documents\\github\\thedayg0ne\\tkhis-networkconnect\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC4EFC79-D22E-4E3B-AE6F-570E422A6202}|TKHiS-NetworkConnect.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TKHiS-NetworkConnect||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC4EFC79-D22E-4E3B-AE6F-570E422A6202}|TKHiS-NetworkConnect.csproj|c:\\users\\thedayg0ne\\desktop\\tkhis-networkconnect\\properties\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{AC4EFC79-D22E-4E3B-AE6F-570E422A6202}|TKHiS-NetworkConnect.csproj|C:\\Users\\TheDayG0ne\\Documents\\GitHub\\TheDayG0ne\\TKHiS-NetworkConnect\\properties\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{AC4EFC79-D22E-4E3B-AE6F-570E422A6202}|TKHiS-NetworkConnect.csproj|solutionrelative:properties\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC4EFC79-D22E-4E3B-AE6F-570E422A6202}|TKHiS-NetworkConnect.csproj|c:\\users\\thedayg0ne\\desktop\\tkhis-networkconnect\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|df8f7042-0bb1-47d1-8e6d-deb3d07698bd"
+      "AbsoluteMoniker": "D:0:0:{AC4EFC79-D22E-4E3B-AE6F-570E422A6202}|TKHiS-NetworkConnect.csproj|c:\\users\\thedayg0ne\\documents\\github\\thedayg0ne\\tkhis-networkconnect\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,9 +34,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "app.manifest",
-              "DocumentMoniker": "C:\\Users\\TheDayG0ne\\Desktop\\TKHiS-NetworkConnect\\Properties\\app.manifest",
+              "DocumentMoniker": "C:\\Users\\TheDayG0ne\\Documents\\GitHub\\TheDayG0ne\\TKHiS-NetworkConnect\\Properties\\app.manifest",
               "RelativeDocumentMoniker": "Properties\\app.manifest",
-              "ToolTip": "C:\\Users\\TheDayG0ne\\Desktop\\TKHiS-NetworkConnect\\Properties\\app.manifest",
+              "ToolTip": "C:\\Users\\TheDayG0ne\\Documents\\GitHub\\TheDayG0ne\\TKHiS-NetworkConnect\\Properties\\app.manifest",
               "RelativeToolTip": "Properties\\app.manifest",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
@@ -47,9 +47,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "TKHiS-NetworkConnect",
-              "DocumentMoniker": "C:\\Users\\TheDayG0ne\\Desktop\\TKHiS-NetworkConnect\\TKHiS-NetworkConnect.csproj",
+              "DocumentMoniker": "C:\\Users\\TheDayG0ne\\Documents\\GitHub\\TheDayG0ne\\TKHiS-NetworkConnect\\TKHiS-NetworkConnect.csproj",
               "RelativeDocumentMoniker": "TKHiS-NetworkConnect.csproj",
-              "ToolTip": "C:\\Users\\TheDayG0ne\\Desktop\\TKHiS-NetworkConnect\\TKHiS-NetworkConnect.csproj",
+              "ToolTip": "C:\\Users\\TheDayG0ne\\Documents\\GitHub\\TheDayG0ne\\TKHiS-NetworkConnect\\TKHiS-NetworkConnect.csproj",
               "RelativeToolTip": "TKHiS-NetworkConnect.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-07T02:22:22.441Z",
@@ -59,11 +59,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\TheDayG0ne\\Desktop\\TKHiS-NetworkConnect\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\TheDayG0ne\\Documents\\GitHub\\TheDayG0ne\\TKHiS-NetworkConnect\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\TheDayG0ne\\Desktop\\TKHiS-NetworkConnect\\Program.cs",
+              "ToolTip": "C:\\Users\\TheDayG0ne\\Documents\\GitHub\\TheDayG0ne\\TKHiS-NetworkConnect\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAkwCwAAABXAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAIkAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T02:20:01.5Z",
               "EditorCaption": ""

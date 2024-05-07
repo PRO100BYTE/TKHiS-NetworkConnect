@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
+using System.Threading;
 
 class Program
 {
@@ -11,14 +12,20 @@ class Program
         if (!IsAdministrator())
         {
             Console.WriteLine("Для работы программы требуются права администратора");
+            Thread.Sleep(10000);
             return;
         }
 
         while (true)
         {
-            Console.WriteLine("1. Подключиться к сети техникума (через Орион)");
-            Console.WriteLine("2. Подключиться к сети техникума (через Ростелеком)");
+            Console.Clear();
+            Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("1. Подключиться к сети техникума через Орион");
+            Console.WriteLine("2. Подключиться к сети техникума через Ростелеком");
             Console.WriteLine("0. Выход");
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Выберите необходимое действие");
 
             var choice = Console.ReadLine();
 
@@ -34,6 +41,7 @@ class Program
                     return;
                 default:
                     Console.WriteLine("Неверный выбор. Попробуйте еще раз.");
+                    Thread.Sleep(3000);
                     break;
             }
         }
@@ -42,6 +50,9 @@ class Program
     static void ConnectToNetwork(string network)
     {
         var adapters = NetworkInterface.GetAllNetworkInterfaces();
+        Console.Clear();
+        Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne"); 
+        Console.WriteLine("-----------------------------------------------------");
         Console.WriteLine("Выберите сетевой адаптер, которому необходимо сменить IP:");
         for (int i = 0; i < adapters.Length; i++)
         {
@@ -53,11 +64,16 @@ class Program
 
         if (network == "Орион")
         {
-            Console.WriteLine("Выбрано подключение к сети техникума через Орион");
+            Console.Clear();
+            Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Выбрано: Подключение к сети техникума через Орион");
+            Console.WriteLine($"Выбран сетевой адаптер: {selectedAdapter.Name}");
             var ipV4Address = selectedAdapter.GetIPProperties().UnicastAddresses.FirstOrDefault(x => x.Address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)?.Address.ToString();
+            Console.WriteLine(" ");
             Console.WriteLine($"Ваш текущий IP: {ipV4Address}");
             Console.WriteLine("Вы можете использовать его в качестве статического IP для подключения к сети, либо же задать другой");
-
+            Console.WriteLine(" ");
             Console.WriteLine("1. Использовать этот IP");
             Console.WriteLine("2. Изменить IP адрес");
 
@@ -65,20 +81,70 @@ class Program
 
             if (ipChoice == "1")
             {
+                Console.Clear();
+                Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
+                Console.WriteLine("-----------------------------------------------------");
+                Console.WriteLine("Устанавливаю следующие параметры:");
+                Console.WriteLine($"- IP: {ipV4Address}");
+                Console.WriteLine("- Маска подсети: 255.255.254.0");
+                Console.WriteLine("- DNS: 10.19.140.3, 10.19.140.10");
                 SetStaticIP(selectedAdapter.Name, ipV4Address, "255.255.254.0", "10.19.140.10", "10.19.140.3", "10.19.140.10");
+                Thread.Sleep(3000);
+                Console.WriteLine(" ");
+                Console.WriteLine("Готово! :)");
+                Thread.Sleep(1000);
+                Console.WriteLine("-----------------------------------------------------");
+                Console.WriteLine(" ");
+                Console.WriteLine("Возврат в главное меню через 10 секунд...");
+                Thread.Sleep(10000);
             }
             else if (ipChoice == "2")
             {
+                Console.Clear();
+                Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
+                Console.WriteLine("-----------------------------------------------------");
                 Console.WriteLine("Введите новый IP-адрес:");
                 var newIp = Console.ReadLine();
 
+                Console.Clear();
+                Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
+                Console.WriteLine("-----------------------------------------------------");
+                Console.WriteLine("Устанавливаю следующие параметры:");
+                Console.WriteLine($"- IP: {newIp}");
+                Console.WriteLine("- Маска подсети: 255.255.254.0");
+                Console.WriteLine("- DNS: 10.19.140.3, 10.19.140.10");
                 SetStaticIP(selectedAdapter.Name, newIp, "255.255.254.0", "10.19.140.10", "10.19.140.3", "10.19.140.10");
+                Thread.Sleep(3000);
+                Console.WriteLine(" ");
+                Console.WriteLine("Готово! :)");
+                Thread.Sleep(1000);
+                Console.WriteLine("-----------------------------------------------------");
+                Console.WriteLine(" ");
+                Console.WriteLine("Возврат в главное меню через 10 секунд...");
+                Thread.Sleep(10000);
             }
         }
         else if (network == "Ростелеком")
         {
-            Console.WriteLine("Выбрано подключение к сети техникума через Ростелеком");
+            Console.Clear();
+            Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Выбрано: Подключение к сети техникума через Ростелеком");
+            Console.WriteLine($"Выбран сетевой адаптер: {selectedAdapter.Name}");
+            Thread.Sleep(3000);
+            Console.Clear();
+            Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Получаю параметры IP через DHCP...");
             SetDHCP(selectedAdapter.Name);
+            Thread.Sleep(3000);
+            Console.WriteLine(" ");
+            Console.WriteLine("Готово! :)");
+            Thread.Sleep(1000);
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine(" ");
+            Console.WriteLine("Возврат в главное меню через 10 секунд...");
+            Thread.Sleep(10000);
         }
     }
 
