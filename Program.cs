@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Net;
@@ -23,6 +24,7 @@ class Program
             Console.WriteLine("-----------------------------------------------------");
             Console.WriteLine("1. Подключиться к сети техникума через Орион");
             Console.WriteLine("2. Подключиться к сети техникума через Ростелеком");
+            Console.WriteLine("3. Задать свои параметры подключения");
             Console.WriteLine("0. Выход");
             Console.WriteLine("-----------------------------------------------------");
             Console.WriteLine("Выберите необходимое действие");
@@ -36,6 +38,9 @@ class Program
                     break;
                 case "2":
                     ConnectToNetwork("Ростелеком");
+                    break;
+                case "3":
+                    ConnectToNetwork("Свое");
                     break;
                 case "0":
                     return;
@@ -81,12 +86,14 @@ class Program
 
             if (ipChoice == "1")
             {
+                Thread.Sleep(1000);
                 Console.Clear();
                 Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
                 Console.WriteLine("-----------------------------------------------------");
                 Console.WriteLine("Устанавливаю следующие параметры:");
                 Console.WriteLine($"- IP: {ipV4Address}");
                 Console.WriteLine("- Маска подсети: 255.255.254.0");
+                Console.WriteLine("- Шлюз: 10.19.140.10");
                 Console.WriteLine("- DNS: 10.19.140.3, 10.19.140.10");
                 SetStaticIP(selectedAdapter.Name, ipV4Address, "255.255.254.0", "10.19.140.10", "10.19.140.3", "10.19.140.10");
                 Thread.Sleep(3000);
@@ -105,13 +112,14 @@ class Program
                 Console.WriteLine("-----------------------------------------------------");
                 Console.WriteLine("Введите новый IP-адрес:");
                 var newIp = Console.ReadLine();
-
+                Thread.Sleep(1000);
                 Console.Clear();
                 Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
                 Console.WriteLine("-----------------------------------------------------");
                 Console.WriteLine("Устанавливаю следующие параметры:");
                 Console.WriteLine($"- IP: {newIp}");
                 Console.WriteLine("- Маска подсети: 255.255.254.0");
+                Console.WriteLine("- Шлюз: 10.19.140.10");
                 Console.WriteLine("- DNS: 10.19.140.3, 10.19.140.10");
                 SetStaticIP(selectedAdapter.Name, newIp, "255.255.254.0", "10.19.140.10", "10.19.140.3", "10.19.140.10");
                 Thread.Sleep(3000);
@@ -137,6 +145,48 @@ class Program
             Console.WriteLine("-----------------------------------------------------");
             Console.WriteLine("Получаю параметры IP через DHCP...");
             SetDHCP(selectedAdapter.Name);
+            Thread.Sleep(3000);
+            Console.WriteLine(" ");
+            Console.WriteLine("Готово! :)");
+            Thread.Sleep(1000);
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine(" ");
+            Console.WriteLine("Возврат в главное меню через 10 секунд...");
+            Thread.Sleep(10000);
+        }
+        else if (network == "Свое")
+        {
+            Console.Clear();
+            Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Выбрано: Установка своих параметров подключения");
+            Console.WriteLine($"Выбран сетевой адаптер: {selectedAdapter.Name}");
+            Thread.Sleep(1000);
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Введите новый IP-адрес:");
+            var newIp = Console.ReadLine();
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Введите маску подсети:");
+            var newNetmask = Console.ReadLine();
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Введите IP адрес шлюза (маршрутизатора):");
+            var newGateway = Console.ReadLine();
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Введите адрес основного DNS сервера:");
+            var newPrefDNS = Console.ReadLine();
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Введите адрес дополнительного DNS сервера:");
+            var newAltDNS = Console.ReadLine();
+            Thread.Sleep(1000);
+            Console.Clear();
+            Console.WriteLine("TKHiS NetworkConnect by #TheDayG0ne");
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Устанавливаю следующие параметры:");
+            Console.WriteLine($"- IP: {newIp}");
+            Console.WriteLine($"- Маска подсети: {newNetmask}");
+            Console.WriteLine($"- Шлюз: {newGateway}");
+            Console.WriteLine($"- DNS: {newPrefDNS}, {newAltDNS}");
+            SetStaticIP(selectedAdapter.Name, newIp, newNetmask, newGateway, newPrefDNS, newAltDNS);
             Thread.Sleep(3000);
             Console.WriteLine(" ");
             Console.WriteLine("Готово! :)");

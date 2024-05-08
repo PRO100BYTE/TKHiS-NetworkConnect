@@ -12,3 +12,4 @@ C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\obj\Debug\T
 C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.csproj.CoreCompileInputs.cache
 C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.exe
 C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\obj\Debug\TKHiS-NetworkConnect.pdb
+C:\Users\TheDayG0ne\Documents\GitHub\TheDayG0ne\TKHiS-NetworkConnect\bin\Debug\TKHiS-NetworkConnect.xml
